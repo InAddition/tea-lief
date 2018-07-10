@@ -1,0 +1,71 @@
+.referer-notice {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: rgba(0,0,0,0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9998;
+	.js-referer-closed & {
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity .3s, visibility .0s .3s, height .0s .3s;
+		height: 0;
+	}
+}
+.close-referer {
+	width: 50px;
+	height: 50px;
+	display: block;
+	background: url(../img/plugins/venobox/close.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.discount-form {
+	width: 90%;
+	max-width: 600px;
+	background: white;
+	padding: 50px;
+	p {
+		color: $copy-grey;
+		font-size: em(24);
+		padding-right: 25px;
+		text-align: center;
+		line-height: 1.2;
+		flex-shrink: 0;
+		margin-bottom: 30px;
+	}
+	form {
+		width: 100%;
+		display: flex;
+		input[type="email"] {
+			flex-grow: 1;
+			background: white;
+			outline: none;
+			border: 0;
+			border: solid 1px grey;
+			border-right: 0;
+			height: em(45);
+			font-size: em(16);
+			padding-left: em(15);
+			font-family: $font-family !important;
+		}
+		input[type="submit"] {
+			width: 100px;
+			text-align: center;
+			outline: none;
+			border: 0;
+			color: white;
+			font-size: em(18);
+			background: linear-gradient(135deg, rgba(158,0,0,1) 0%, rgba(204,0,0,1) 100%);
+			font-family: $font-family !important;
+		}
+	}
+}

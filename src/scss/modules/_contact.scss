@@ -1,0 +1,65 @@
+.wpcf7 {
+	br {
+		display: none;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	input[type='text'],
+	input[type='email'],
+	textarea  {
+		padding: 20px;
+		border: solid 1px $grey;
+		outline: none;
+		font-family: $font-family;
+		font-size: 16px;
+		@media (max-width: $bp-tablet ) {
+			padding: 15px;
+		}
+	}
+	.wpcf7-form-control-wrap.your-message {
+		width: 100%;
+		textarea {
+			width: 100%;
+		}
+	}
+	.wpcf7-form-control-wrap.your-name,
+	.wpcf7-form-control-wrap.your-email {
+		width: 49%;
+		display: block;
+		float: left;
+		margin-bottom: 1%;
+		input {
+			width: 100%;
+		}
+		@media (max-width: $bp-tablet ) {
+			width: 100%;
+		}
+	}
+	.wpcf7-form-control-wrap.your-email {
+		float: right;
+	}
+	input[type='submit'] {
+		background: $accent!important;
+		transition: background .3s!important;
+		border-radius: 0!important;
+		font-family: $font-family !important;
+		color: white;
+		padding: 10px 20px;
+		width: 100px;
+		font-size: 14px;
+		color: white;
+		margin-top: 20px;
+		transition: background .3s;
+		&:hover {
+		    background: $primary!important;
+		}
+	}
+}
+
+.div.wpcf7-response-output {
+	border: 0 !important;
+}
+.g-recaptcha {
+	margin-top: 15px !important;
+}

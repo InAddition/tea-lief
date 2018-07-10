@@ -1,0 +1,52 @@
+.review-container {
+	width: 100%;
+	background: linear-gradient(to right, rgba(58,58,58,1) 0%, rgba(79,79,79,1) 50%, rgba(58,58,58,1) 100%);
+	padding: em(80);
+	border-top: solid 1px #2e2e2e;
+	* {
+		color: white;
+	}
+	h2 {
+		font-size: em(36);
+		margin-bottom: 0;
+		text-align: center;
+		line-height: 1;
+		margin-bottom: 30px;
+	}
+	.home-cta-copy * {
+		text-align: center;
+		font-size: em(18);
+		line-height: 1.2;
+	}
+	@media (max-width: $bp-desktop) {
+		font-size: 80%;
+	}
+	@media (max-width: $bp-laptop) {
+		padding: em(40);
+	}
+}
+.reviews-slider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.reviews {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.review {
+	text-align: center;
+	width: 100%;
+	p {
+		color: white;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	span {
+		display: block;
+		font-style: italic;
+	}
+}

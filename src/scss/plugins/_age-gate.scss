@@ -1,0 +1,51 @@
+.age-gate-heading {
+	margin-bottom: 20px !important;
+}
+.age-gate-subheading {
+	margin-bottom: 20px;
+}
+.age-gate-message {
+	margin-bottom: 10px;
+}
+.age-gate-form ul {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+.age-gate-form-section {
+	margin: 0 5px 20px;
+}
+.age-gate-label {
+	margin-right: 5px;
+}
+.age-gate-input {
+	padding: 10px;
+}
+.age-gate-submit {
+	margin-top: 20px;
+	border: 0;
+	padding: 10px 20px;
+	width: 80px;
+	color: white;
+	font-family: $font-family;
+	background: $accent;
+	transition: background .3s;
+	&:hover {
+		background: $primary;
+	}
+}
+.age-gate-submit-yes, .age-gate-submit-no {
+	margin-top: 20px;
+	border: 0;
+	padding: 10px 20px;
+	width: 80px;
+	color: white;
+	font-family: $font-family;
+	background: $accent;
+	transition: background .3s;
+	&:hover {
+		background: $primary;
+	}
+}
+.age-gate-wrapper {
+	z-index: 9999 !important;
+}

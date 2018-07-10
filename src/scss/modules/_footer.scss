@@ -1,0 +1,159 @@
+footer {
+	width: 100%;
+	background: $grey;
+}
+.footer-container {
+	display: flex;
+	max-width: 1000px;
+	align-items: center;
+	p {
+		color: white;
+		font-size: em(14);
+		line-height: 1.2;
+		margin-bottom: em(25);
+		letter-spacing: 0.025em;
+		font-family: $font-medium;
+	}
+	@media (max-width: $bp-tablet) {
+		flex-wrap: wrap;
+	}
+}
+.footer-copy {
+	padding-right: 100px;
+	color: white;
+	font-size: em(14);
+	line-height: 1.2;
+	letter-spacing: 0.025em;
+	font-family: $font-medium;
+	@media (max-width: $bp-tablet) {
+		padding-right: 0;
+		order: 2;
+		margin-top: 50px;
+	}
+	* {
+		color: white;
+		font-size: em(14);
+		line-height: 1.2;
+		margin-bottom: em(25);
+		letter-spacing: 0.025em;
+		font-family: $font-medium;
+	}
+	:last-child {
+		margin-bottom: 0;
+	}
+}
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-shrink: 0;
+	@media (max-width: $bp-tablet) {
+		order: 1;
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+}
+.footer-logo {
+	width: 100%;
+	max-width: 150px;
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+		path {
+			fill: white;
+		}
+	}
+}
+.footer-nav {
+	font-size: em(14);
+	margin-top: em(30);
+	padding: 0;
+	li {
+		list-style: none;
+		display: inline;
+		color: white;
+	}
+	a {
+		text-decoration: none;
+		padding: 0 em(6);
+		color: white;
+	}
+	@media (max-width: $bp-large) {
+		font-size: em(14);
+		a {
+			padding: 0 em(10)
+		}
+	}
+	@media (max-width: $bp-tablet) {
+		font-size: em(14);
+		text-align: center;
+		li {
+			display: block;
+		}
+		a {
+			padding: 0 em(6)
+		}
+	}
+}
+.footer-social {
+	margin-top: em(30);
+	display: flex;
+	padding: 0;
+	li {
+		list-style: none;
+		display: inline;
+		margin-left: 5px;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 40px;
+			width: 40px;
+			background: $accent;
+			transition: background .3s;
+			svg {
+				width: 18px;
+				height: 18px;
+				path {
+					fill: white;
+				}
+			}
+			&:hover {
+				background: $grey;
+			}
+		}
+	}
+	@media (max-width: $bp-large) {
+		a {
+			height: 36px;
+			width: 36px;
+		}
+	}
+}
+.footer-badges,
+.woocommerce img.footer-badges, .woocommerce-page img.footer-badges
+ {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 230px;
+	margin-top: em(30);
+
+}
+.copyright {
+	width: 100%;
+	background: black;
+	padding: 15px;
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	margin: 0;
+	span {
+		padding: 0 5px;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+	}
+}

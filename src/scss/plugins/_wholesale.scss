@@ -1,0 +1,40 @@
+#wwlc-registration-form {
+	ul {
+		margin-bottom: 20px;
+	}
+	input, select {
+		width: 100%;
+		padding: 10px;
+		font-size: 14px;
+		height: 40px;
+		display: block;
+	}
+	label {
+		font-size: 14px;
+	}
+	.select2-container .select2-selection--single .select2-selection__rendered {
+		font-size: 14px;
+	}
+	abbr {
+		text-decoration: none;
+		color: red;
+	}
+	a.form-control {
+		display: none;
+	}
+	.register-button-container {
+		border: none;
+	}
+	.button-primary {
+		background: $accent!important;
+		transition: background .3s!important;
+		border-radius: 0!important;
+		font-family: $font-family !important;
+		color: white;
+		height: 50px;
+		font-size: 16px;
+		&:hover {
+		    background: $primary!important;
+		}
+	}
+}

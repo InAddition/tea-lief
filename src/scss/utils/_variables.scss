@@ -1,0 +1,59 @@
+/**********************
+Breakpoints 
+***********************/
+
+$bp-xl: 1824px;
+$bp-large: 1300px;
+$bp-desktop: 1150px;
+$bp-laptop: 975px;
+$bp-tablet: 768px;
+$bp-mobile: 650px;
+$bp-small: 550px;
+$bp-xs: 320px;
+
+/**********************
+Colors
+***********************/
+
+$grey: #1f1f1f;
+$light-grey: #e1e1e1;
+$copy-grey: #2c2c2c;
+$red: #c10000;
+$dark-red: #9b0000;
+
+/**********************
+Color Usage
+***********************/
+
+$accent: $red;
+$primary: $grey;
+
+/**********************
+Font Family
+***********************/
+
+$font-family: 'Raleway', sans-serif;
+$font-copy: 'Raleway', sans-serif;
+
+/**********************
+Font Weights
+***********************/
+
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-black: 700;
+
+/**********************
+Font Size
+***********************/
+
+$browser-context: 16; 
+$font-small: em(14);
+$font-default: em(16);
+$font-copy: em(18);
+$font-medium: em(24);
+$font-large: em(36);
+$font-xl: em(40);
+$font-xxl: em(43);
+

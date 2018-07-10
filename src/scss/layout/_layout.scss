@@ -1,0 +1,35 @@
+.site-wrapper {
+	min-height: 100%;
+}
+.wrapper {
+	width: 100%;
+	padding: em(50);
+	@media (max-width: $bp-tablet) {
+		padding: em(25);
+	}
+}
+.page-wrapper {
+	padding-top: em(125);
+	@media (max-width: $bp-tablet) {
+		padding-top: em(75);
+	}
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.page-content {
+	background: white;
+	width: 100%;
+	padding: em(60);
+	@media (max-width: $bp-tablet) {
+		padding: em(30);
+	}
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}

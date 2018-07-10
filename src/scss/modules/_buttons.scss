@@ -1,0 +1,87 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	background: linear-gradient(135deg, rgba(158,0,0,1) 0%, rgba(204,0,0,1) 100%);
+	position: relative;
+	padding: em(20) em(30) em(20) em(50);
+	text-decoration: none;
+	svg {
+		display: block;
+		height: em(25);
+		width: em(25);
+		margin-right: em(10);
+		position: relative;
+		z-index: 2;
+		transition: transform .3s;
+	}
+	span {
+		font-size: em(28);
+		color: white;
+		font-family: $font-family;
+		position: relative;
+		z-index: 2;
+		transition: transform .3s;
+		font-weight: $font-medium;
+	}
+	&:before {
+		background: linear-gradient(135deg, rgba(204,0,0,1)  0%, rgba(158,0,0,1) 100%);
+		height: 100%;
+		width: em(20);
+		left: 0;
+		content: '';
+		position: absolute;
+		z-index: 2;
+	}
+	&:after {
+		background: linear-gradient(135deg, rgba(204,0,0,1)  0%, rgba(158,0,0,1) 100%);
+		height: 100%;
+		width: 100%;
+		content: '';
+		position: absolute;
+		z-index: 1;
+		opacity: 0;
+		left: 0;
+		top: 0;
+		transition: opacity .3s;
+	}
+	@media (max-width: $bp-mobile) {
+		padding: em(20) em(30) em(20) em(30);
+		&:before {
+			display: none;
+		}
+	}
+	
+}
+a.btn,
+input.btn {
+	&:hover {
+		&:after {
+			opacity: 1;
+		}
+		svg {
+			transform: translateX(5px);
+		}
+	}
+}
+.sml-btn {
+	padding: em(15) em(30) em(15) em(45);
+	svg {
+		display: block;
+		height: 15px;
+		width: 15px;
+		margin-right: 10px;
+		position: relative;
+		z-index: 2;
+		transition: transform .3s;
+	}
+	span {
+		font-size: em(22);
+	}
+	@media (max-width: $bp-mobile) {
+		padding: em(15) em(30) em(15) em(30);
+		&:before {
+			display: none;
+		}
+	}
+}
+
